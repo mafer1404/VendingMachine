@@ -1,0 +1,43 @@
+body {
+  background-color: #f9d9e3;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF9A8D;
+}
+
+h2 {
+  color: #FF9A8D;
+}
+
+.btn {
+  background-color: #f5b7b1;
+  border-color: transparent;
+  color: #6d4f14;
+}
+
+.btn:hover {
+  background-color: #f3938b;
+  color: #6d4f14;
+  border-color: transparent;
+}
+
+.vending-machine-img {
+  max-width: 330px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.vending-machine-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
