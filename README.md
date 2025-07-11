@@ -7,25 +7,13 @@
 1. Asegurarse de estar en la carpeta adecuada para la ejecución del proyecto
 
 ```bash
-cd CI-0126\VendingMachine\frontend
+cd \VendingMachine\frontend
 ```
 
 2. Instalar las dependencias necesarias para correr el proyecto:
 
 ```bash
 npm install
-```
-
-```bash
-npm install -g @vue/cli
-```
-
-```bash
-npm install vue-router@4
-```
-
-```bash
-npm install axios
 ```
 
 3. Levantar el servidor de desarrollo
@@ -41,27 +29,13 @@ La dirección por defecto del frontend es `http://localhost:8080`.
 1. Asegurarse de estar en la carpeta adecuada para la ejecución del proyecto
 
 ```bash
-cd CI-0126\VendingMachine\backend
+cd \VendingMachine\backend
 ```
 
-2. Ejecutar manualmente el proyecto desde consola:
+2. Abrir y ejecutar el proyecto desde `Visual Studio`, abriendo la solución `backend.sln` ubicada en la ruta:
 
 ```bash
-dotnet restore 
-```
-
-```bash
-dotnet build 
-```
-
-```bash
-dotnet run 
-```
-
-3. Para más facilidad puede abrir y ejecutar el proyecto desde `Visual Studio`, abriendo la solución `backend.sln` ubicada en la ruta:
-
-```bash
-CI-0126\VendingMachine\backend\backend.sln
+\VendingMachine\backend\backend.sln
 ```
 
 La dirección del backend es `https://localhost:7295/`.
