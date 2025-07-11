@@ -25,7 +25,7 @@ public class ChangeCalculator
 
     if (changeToGive < 0)
       return new ChangeResultModel { Success = false
-        , Message = "Dinero insuficiente." };
+        , Message = "Error: Dinero insuficiente para completar la compra." };
 
     var breakdown = new Dictionary<int, int>();
     int remaining = changeToGive;
