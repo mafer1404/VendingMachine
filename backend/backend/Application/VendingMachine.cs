@@ -21,11 +21,14 @@ namespace backend.Domain
 
     public bool BuyDrink(string name, int quantity)
     {
+      if (quantity <= 0) return false;
+
       var drink = _drinks.FirstOrDefault(d => d.Name == name);
       if (drink == null || drink.Quantity < quantity) return false;
 
       drink.Quantity -= quantity;
       return true;
     }
+
   }
 }
