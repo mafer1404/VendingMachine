@@ -1,40 +1,24 @@
 body {
-  background-color: #f9d9e3;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: #FEDCDC;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #FF9A8D;
+  color: #EE8187;
 }
 
 h2 {
   color: #FF9A8D;
 }
 
-.btn {
-  background-color: #f5b7b1;
-  border-color: transparent;
-  color: #6d4f14;
-}
-
-.btn:hover {
-  background-color: #f3938b;
-  color: #6d4f14;
-  border-color: transparent;
-}
-
 .vending-machine-img {
-  max-width: 330px;
+  max-width: 160px;
   cursor: pointer;
   transition: transform 0.3s ease;
   flex-shrink: 0;
+  margin-left: 200px;
+  margin-top: 40px;
 }
 
 .vending-machine-img:hover {
