@@ -11,17 +11,3 @@ h1 {
 h2 {
   color: #FF9A8D;
 }
-
-.vending-machine-img {
-  max-width: 160px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
-  margin-left: 200px;
-  margin-top: 40px;
-}
-
-.vending-machine-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
