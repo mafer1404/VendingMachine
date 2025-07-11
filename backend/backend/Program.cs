@@ -1,4 +1,4 @@
-using backend.Application;
+using backend.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,17 +16,15 @@ builder.Services.AddCors(options =>
       });
 });
 
-// Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<VendingMachine>();
+
+builder.Services.AddSingleton<VendingMachineService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
   app.UseSwagger();
