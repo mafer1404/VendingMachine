@@ -1,14 +1,15 @@
-﻿using backend.Domain;
+﻿using backend.Application;
+using backend.Domain;
 
-public class VendingMachineService
+public class VendingMachineService : IVendingMachineService
 {
-  private readonly VendingMachine _vendingMachine;
-  private readonly ChangeCalculator _changeCalculator;
+  private readonly IVendingMachine _vendingMachine;
+  private readonly IChangeCalculator _changeCalculator;
 
-  public VendingMachineService()
+  public VendingMachineService(IVendingMachine vendingMachine, IChangeCalculator changeCalculator)
   {
-    _vendingMachine = new VendingMachine();
-    _changeCalculator = new ChangeCalculator();
+    _vendingMachine = vendingMachine;
+    _changeCalculator = changeCalculator;
   }
 
   public List<DrinkModel> GetAllDrinks() => _vendingMachine.GetAllDrinks();

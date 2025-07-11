@@ -1,6 +1,6 @@
 ﻿using backend.Domain;
 
-public class ChangeCalculator
+public class ChangeCalculator : IChangeCalculator
 {
   private Dictionary<int, int> coinInventory = new Dictionary<int, int>()
   {

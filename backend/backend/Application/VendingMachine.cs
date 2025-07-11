@@ -2,7 +2,7 @@
 
 namespace backend.Domain
 {
-  public class VendingMachine
+  public class VendingMachine : IVendingMachine
   {
     private List<DrinkModel> _drinks;
 

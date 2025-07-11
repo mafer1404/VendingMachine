@@ -1,3 +1,4 @@
+using backend.Application;
 using backend.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +22,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<VendingMachineService>();
+builder.Services.AddSingleton<IVendingMachine, VendingMachine>();
+builder.Services.AddSingleton<IChangeCalculator, ChangeCalculator>();
+builder.Services.AddSingleton<IVendingMachineService, VendingMachineService>();
 
 var app = builder.Build();
 

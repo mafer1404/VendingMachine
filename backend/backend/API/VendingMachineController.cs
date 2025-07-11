@@ -1,4 +1,5 @@
-﻿using backend.Domain;
+﻿using backend.Application;
+using backend.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Controllers
@@ -7,9 +8,9 @@ namespace backend.Controllers
   [Route("[controller]")]
   public class VendingMachineController : ControllerBase
   {
-    private readonly VendingMachineService _vendingMachineService;
+    private readonly IVendingMachineService _vendingMachineService;
 
-    public VendingMachineController(VendingMachineService vendingMachineService)
+    public VendingMachineController(IVendingMachineService vendingMachineService)
     {
       _vendingMachineService = vendingMachineService;
     }
