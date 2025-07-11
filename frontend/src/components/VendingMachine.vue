@@ -72,7 +72,6 @@
 </template>
 
 <script>
-import vendingMachineImg from '@/assets/images/vendingMachine.png'
 import AvailableDrinks from '@/components/AvailableDrinks.vue'
 import DrinkSelector from '@/components/DrinkSelector.vue'
 import MoneyInput from '@/components/MoneyInput.vue'
@@ -93,7 +92,6 @@ export default {
   },
   data() {
     return {
-      imgSrc: vendingMachineImg,
       drinks: [],
       selectedQuantities: {}, 
       userMoney: {
